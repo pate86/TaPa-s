@@ -7,16 +7,16 @@
 }
 
 .navbar {
-    overflow: hidden;
-    
+    overflow: visible;
+    padding: 10px; /* Innenabstand der Navbar */
+    position: absolute; 
     background-color: #fff;
     background: linear-gradient(to right, rgb(0, 0, 0), #ffffff00);
-    position: static; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
-    width: 640px; /* Full width */
-    border-radius: 10px; 
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    
+    top: 0; /* Oben ausrichten */
+    right: 0; /* Rechts ausrichten */
+    left: 30px; /* Links ausrichten */
+    border-radius: 10px;
 }
   
   /* Change background on mouse-over */
@@ -39,19 +39,21 @@ body{
     font-family: "poppins", sans-serif;
     position: relative;
     background: url('/TaPas-Kitchen/img/bgki.jpg') no-repeat center center fixed;
-    background-size: cover;               /* farb verlauf body!! Anpassung notwendig nach style thema */
+    background-size: cover;            
 }
 
 .container{
-    width: 640px;                                                               /* größe der chatbox, breite kann konfiguriert werden */
-    background-color: hsla(0, 0%, 27%, 0.457);                                                /* hintergrundfarbe der chatbox */
+    width: 1100px;                                                               /* größe der chatbox, breite kann konfiguriert werden */
+    background-color: hsla(0, 0%, 23%, 0.457);                                                /* hintergrundfarbe der chatbox */
     border-radius: 10px;                                                        /* CHAT BOX radius der ecken */
     box-shadow: 5px 0px 10px rgba(0,0,0,0.03);
-    position: relative;
+    position:absolute;
+    left: 30px;
+    top: 58px;
 }
 
 .card-header{
-    background-color: #13131384;                                                 /* TITEL chatbox hintergrundfarbe*/
+    background-color: #13131300;                                                 /* TITEL chatbox hintergrundfarbe*/
     border-radius: 10px 10px 0px 0px;                                            /* CHAT Titelbereich radius der ecken */
     padding: 0rem;
     color: #fff;
@@ -80,7 +82,7 @@ body{
 .card-body{
     padding: 0.8rem;
     font-size: 1rem;
-    height: 600px;
+    height: 750px;
     overflow-y: auto;
 }
 
